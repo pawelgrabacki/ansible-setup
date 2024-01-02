@@ -1,3 +1,3 @@
-# ansibe-setup
+# ansible-setup
 
 Ansible setup.
