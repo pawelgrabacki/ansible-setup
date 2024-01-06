@@ -1,0 +1,14 @@
+---
+- hosts: servers
+  become: true
+  
+  tasks:
+  - name: install nginx package
+    yum:
+      name: nginx
+  
+  - name: Start service nginx, if not started
+    ansible.builtin.service:
+      name: nginx
+      state: started
+          

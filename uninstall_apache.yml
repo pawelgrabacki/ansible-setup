@@ -1,0 +1,10 @@
+---
+- hosts: servers
+  become: true
+  
+  tasks:
+  - name: uninstall httpd package
+    yum:
+      name: httpd
+      state: absent
+          
